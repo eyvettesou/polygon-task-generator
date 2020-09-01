@@ -141,20 +141,21 @@ createSolutionBlock(shapesCount);
 const app = document.getElementById("content");
 app.appendChild(content);
 
-// setTimeout(() => {
-//   const shapeContent = document.getElementById("shape-content");
-//   const shapeSVGs = document.getElementById("shape-svgs");
-//   html2canvas(shapeContent).then(function(canvas) {
-//       shapeContent.removeChild(shapeSVGs);
-//       shapeContent.appendChild(canvas);
-//   });
-// }, 500);
-
-window.onload = () => {
+setTimeout(() => {
   const shapeContent = document.getElementById("shape-content");
   const shapeSVGs = document.getElementById("shape-svgs");
   html2canvas(shapeContent).then(function(canvas) {
       shapeContent.removeChild(shapeSVGs);
       shapeContent.appendChild(canvas);
   });
-};
+}, 500);
+
+// window.onload = () => {
+//   console.log('window loaded')
+//   const shapeContent = document.getElementById("shape-content");
+//   const shapeSVGs = document.getElementById("shape-svgs");
+//   html2canvas(shapeContent).then(function(canvas) {
+//       shapeContent.removeChild(shapeSVGs);
+//       shapeContent.appendChild(canvas);
+//   });
+// };

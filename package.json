@@ -1,0 +1,32 @@
+{
+  "name": "polygon-task-generator",
+  "version": "1.0.0",
+  "description": "Generates randomized rows and columns of various regular polgyons. Counting task usually used on economics experiments.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:js": "webpack --mode=production",
+    "watch:js": "onchange \"src/js\" -- webpack --mode=development",
+    "lint": "eslint src/index.js --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eyvettesou/polygon-task-generator.git"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "babel-loader": "^8.1.0",
+    "eslint": "^7.8.0",
+    "eslint-loader": "^4.0.2",
+    "file-loader": "^6.1.0",
+    "onchange": "^7.0.2",
+    "svg-url-loader": "^6.0.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "html2canvas": "^1.0.0-rc.7"
+  }
+}

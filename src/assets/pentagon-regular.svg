@@ -1,0 +1,19 @@
+<svg
+  width="110"
+  height="100"
+  version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink= "http://www.w3.org/1999/xlink"
+>
+  <g>
+    <g transform="translate(-2279,-506.935)">
+      <path
+        fill="none"
+        stroke="#000000"
+        stroke-width="2px"
+        transform="matrix(0.188191,0,0,-0.188135,2360.65,609.32)"
+        d="m -145.7,521.2 -255.2,-185.4 97.5,-300 315.4,0 97.5,300 z"
+      >
+    </g>
+  </g>
+</svg>

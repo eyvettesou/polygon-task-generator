@@ -20,6 +20,24 @@ h2 {
   padding: 16px 24px;
 }
 
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 16px;
+  text-align: center;
+}
+
+th {
+  background-color: hsl(218, 75%, 70%);
+  color: white;
+}
+
 #content {
   margin-top: 36px;
 }
@@ -61,4 +79,6 @@ h2 {
 
 .solutionBody {
   margin: 24px 48px 0 48px;
+  display: flex;
+  justify-content: center;
 }

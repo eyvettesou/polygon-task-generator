@@ -102,23 +102,14 @@ function createShapesContent(shapes, shapeContainer){
   
 }
 
-function createSolutionBlock(shapesCount) {
-  const solution = document.createElement("div");
-  solution.classList.add("solution");
-  const solutionHeader = document.createElement("h2");
-  solutionHeader.innerHTML = "Solution:";
-  const solutionBody = document.createElement("p");
-  solutionBody.classList.add("solutionBody");
-  solutionBody.innerHTML = `
-  6 sides: ${shapesCount[6] || 0}, <br/>
-  7 sides: ${shapesCount[7]}, <br/>
-  8 sides: ${shapesCount[8]}, <br/>
-  9 sides: ${shapesCount[9]}, <br/>
-  10 sides: ${shapesCount[10]}, <br/>
-  `;
-  solution.appendChild(solutionHeader);
-  solution.appendChild(solutionBody);
-  content.appendChild(solution);
+function addSolutionsRow(shapesCount, min, max) {
+  const solutionsRow = document.getElementById("solutions-row");
+  let i;
+  for (i = min; i < max + 1; i++) {
+    const cell = document.createElement("td");
+    cell.innerHTML = shapesCount[i];
+    solutionsRow.appendChild(cell);
+  }
 }
 
 const content = createContentContainer();
@@ -136,7 +127,7 @@ const { shapes: shapesList, shapesCount } = getRandomShapes({
 });
 
 createShapesContent(shapesList, shapeContainer);
-createSolutionBlock(shapesCount);
+addSolutionsRow(shapesCount, 7, 10);
 
 const app = document.getElementById("content");
 app.appendChild(content);
